@@ -13,7 +13,7 @@
 <body>
 
     <nav class="navbar">
-        <a href="#" class="logo"> <span>VARENN </span>RENOVATION</a>
+        <a href="#" class="logo"><img src="./Varren Logo_.png" alt="logo"></a>
         <div class="nav-links">
             <ul>
                 <li> <a href="#">Acceuil</a></li>
@@ -21,10 +21,10 @@
                 <li> <a href="#">Extension</a></li>
                 <li> <a href="#">Réalisation</a></li>
                 <li> <a href="#">Apropos</a></li>
-                <li> <a href="#">Contact</a></li>
+                <li> <a href="../Contact/contact.html">Contact</a></li>
             </ul>
         </div>
-        <img src="home.png" alt="image" class="menu">
+        <img src="menu.png" alt="image" class="menu-hamburger">
     </nav>
     <header>
 
@@ -42,6 +42,14 @@
                 <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
         </div>
+
+        <div class="container">
+            <div class="container-bloc">
+                <h1 class="text">VARENN RENOVATION</h1>
+                <P class="contact"> <a href="#" class="contact"> Contactez-nous</a></P>
+            </div>
+        </div>
+
         <div class="footer-bottom">
             <p>coptright &copy;2023 VarennRénovation. designed by <span>beviryon</span></p>
         </div>
@@ -49,12 +57,16 @@
 </body>
 
 <script>
-    const menu = document.querySelector(".menu")
-    const navLinks = document.querySelector(".nav-links")
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-links");
 
-    menu.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-    })
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    });
 </script>
+ 
+
 
 </html>
