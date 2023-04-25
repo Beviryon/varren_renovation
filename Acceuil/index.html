@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo"> <span>VARENN </span>RENOVATION</a>
+        <div class="nav-links">
+            <ul>
+                <li> <a href="#">Acceuil</a></li>
+                <li> <a href="#">Rénovation</a></li>
+                <li> <a href="#">Extension</a></li>
+                <li> <a href="#">Réalisation</a></li>
+                <li> <a href="#">Apropos</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="home.png" alt="image" class="menu">
+    </nav>
+    <header>
+
+    </header>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Varenn Rénovation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla est distinctio deserunt quis!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>coptright &copy;2023 VarennRénovation. designed by <span>beviryon</span></p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const menu = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    menu.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>
