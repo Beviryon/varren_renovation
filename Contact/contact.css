@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: 'Poppin';
+    font-family: 'Lato', sans-serif;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(fond4.jpg);
+    background: url(fond9.jpg);
     background-size: cover; 
 }
 
@@ -74,6 +74,10 @@ body{
     font-size: 22px;
 }
 
+.container .contactInfo .box p {
+    cursor: pointer;
+}
+
 .container .contactInfo .box .text {
    display: flex;
    margin-left: 20px;
@@ -81,7 +85,9 @@ body{
    color: #fff;
    flex-direction: column;
    font-weight: 300; 
-}.container .contactInfo .box .text h3 {
+}
+
+.container .contactInfo .box .text h3 {
     font-weight: 500;
     color: #00bcd4;
 }

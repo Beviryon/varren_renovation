@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="apropos.css">
+    <title>A propos</title>
 </head>
 <body>
     
@@ -12,16 +13,87 @@
         <a href="#" class="logo"><img src="./Varren Logo_.png" alt="logo"></a>
         <div class="nav-links">
             <ul>
-                <li> <a href="#">Acceuil</a></li>
+                <li> <a href="../Acceuil/index.html">Acceuil</a></li>
                 <li> <a href="#">Rénovation</a></li>
                 <li> <a href="#">Extension</a></li>
                 <li> <a href="#">Réalisation</a></li>
-                <li> <a href="#">Apropos</a></li>
+                <li> <a href="../Apropos/apropos.html">Apropos</a></li>
                 <li> <a href="../Contact/contact.html">Contact</a></li>
             </ul>
         </div>
         <img src="menu.png" alt="image" class="menu-hamburger">
     </nav>
 
+    <Section class="apropos">
+        <div class="content">
+            <h2>Varenn Rénovation</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error vel magni sunt
+                 repudiandae sintLorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error vel magni sunt
+                 repudiandae sint officia doloribus? Laudantium, possimus distinctio. officia doloribus? Laudantium, possimus distinctio.</p>
+        </div>
+
+        <div class="container">
+            <div class="contentImage">  
+                <img src="fond1.jpg" alt="image" class="image">
+            </div>
+
+            <div class="contentText">
+                <div class="bloc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit explicabo,
+                        vitae consequuntur illo cumque odit provident iure dolorum inventore, voluptate unde dolores quod et.
+                         Ipsa eum ullam voluptatibus reprehenderit culpa iusto eos dolorum ut consectetur dolor.
+                        Voluptatibus iusto natus aliquam modi provident incidunt ipsum odit, voluptatum possimus nihil, nemo eum.</p>
+                    <ul>
+                        <li>Des rénovations intérieures (logement complet, salle de bain, cuisine, création de pièces, aménagement des combles, agencement de bureaux et locaux commerciaux, remise aux normes de réseau électrique et de plomberie...)</li>
+                        <li>Des rénovations extérieures (portail, maçonnerie, terrasse, garage, clôture...).</li>
+                        <li>Agrandissements et extensions de maisons, bâtiments…</li>
+                        <li>Conception et fabrication de mobilier sur mesure dans notre atelier menuiserie.</li>
+                    </ul>
+
+                    <div class="bouton">
+                        <h3><a href="../Contact/contact.html">Contactez-nous</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!-- <footer>
+        <div class="footer-content">
+            <h3>Varenn Rénovation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla est distinctio deserunt quis!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="container-bloc">
+                <h1 class="text">VARENN RENOVATION</h1>
+                <P class="contact"> <a href="#" class="contact"> Contactez-nous</a></P>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>coptright &copy;2023 VarennRénovation. designed by <span>beviryon</span></p>
+        </div>
+    </footer> -->
+
 </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuHamburger = document.querySelector(".menu-hamburger");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuHamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-menu');
+            });
+        });
+    </script>
+
 </html>
