@@ -8,6 +8,11 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+header {
+    height: 100vh;
+    width: 100vw;
+}
+
 .navbar {
     position: absolute;
     width: 100%;
@@ -71,10 +76,10 @@ span {
     .navbar .logo {
         display: flex;
         position: absolute;
-        top: 40px;
-        left: 50px;
-        width: 50px;
-        height: 50px;
+        top: 20px;
+        left: 70px;
+        width: 60px;
+        height: 60px;
     }
 
     .navbar .menu-hamburger {
@@ -103,6 +108,7 @@ span {
     }
 
     /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
     /*l'apparition et fermeture du menu*/
     .nav-links.mobile-menu {
         margin-left: 0;
@@ -118,7 +124,34 @@ span {
         margin: 20px 0;
         font-size: 1.3em;
     }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+    /*Style apropos mobile*/
+    .apropos {
+        position: absolute;
+        display: flex;
+        /* margin-top: 160px;
+        width: 100vw;
+        height: auto; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .apropos .content {
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .apropos .content h2 {
+        font-size: 26px;
+        font-weight: 200;
+        color: #620000;
+    }
+
+
 }
+
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /*Style apropos*/
@@ -203,3 +236,86 @@ span {
     border-radius: 15px;
     letter-spacing: 0.5px;
 }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*style footer*/
+footer {
+    background-color: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content .socials li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-content .socials li a {
+    color: red;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-sqacing: 2px;
+    text-transform: capitalize;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
