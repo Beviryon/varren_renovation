@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(fond9.jpg);
+    background: url(./images/fond9.jpg);
     background-size: cover; 
 }
 
