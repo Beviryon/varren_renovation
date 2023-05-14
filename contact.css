@@ -159,12 +159,25 @@ body{
         padding: 50px;
     }
 
+    .contact .content h2 {
+        font-size: 40px;
+        margin: 12px 0;
+        color: #00bcd4;
+        font-weight: 500;
+    }
+
     .container {
         flex-direction: column;
     }
 
     .container .contactInfo {
         margin-bottom: 40px;
+    }
+
+    .container .contactInfo .box {
+        position: relative;
+        width: 300px;
+        right: 80px;
     }
 
     .container .contactForm {
