@@ -10,20 +10,19 @@ body{
 }
 
 header {
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
 
 .navbar {
     position: relative;
     width: 100%;
-    height: 100px;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    box-shadow: 0px 1px 5px rgb(0, 0, 0);
+    /* box-shadow: 0px 1px 5px rgb(0, 0, 0); */
 }
 
 .navbar a {
@@ -32,8 +31,8 @@ header {
 
 .navbar .logo {
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     font-weight: bold;
 }
 
@@ -156,12 +155,21 @@ span {
 #about .container .left p {
     color: #000;
     text-align: justify;
+    padding: 10px;
+}
+
+#about .container .left h2 {
+    color: #ffffff;
+    text-align: justify;
+    padding: 10px;
+    margin: 5px;
 }
 
 #about .container .left h3 {
     font-size: 3em;
     color: rgb(255, 119, 0);
     margin-bottom: 25px;
+    text-align: center;
 }
 
 #about .container .right {
@@ -210,8 +218,13 @@ span {
     transition: 0.3s;
     transition-delay: 0.1s;
 }
-#about .container .right .icon:hover h4 {
-    color: #10bff1;
+
+#about .container .right .icon h4 a{
+    color: #000;
+    font-weight: bold;
+}
+#about .container .right .icon:hover h4 a{
+    color: #fff;
 }
 
 @media screen  and (max-width: 900px) {
@@ -321,4 +334,28 @@ footer {
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
+.image-slider {
+    height: 200px; /* Hauteur souhaitée de la section des images */
+    overflow: hidden; /* Cache les images qui dépassent de la hauteur définie */
+  }
+  
+  .slider-container {
+    display: flex; /* Affiche les images en ligne */
+    animation: slide 20s infinite; /* Animation de défilement */
+  }
+  
+  .slider-container img {
+    width: 200px; /* Largeur souhaitée des images */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    margin-right: 10px; /* Marge entre les images */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* Commence sans décalage */
+    }
+    100% {
+      transform: translateX(-100%); /* Défilement complet vers la gauche */
+    }
+  }
+  

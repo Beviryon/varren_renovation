@@ -29,31 +29,60 @@
     <section id="about">
         <div class="container">
             <div class="left">
-                <h3>A propos </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste rem provident officia
-                     ut quas unde magnam? Commodi, voluptate doloribus id, 
-                    repellat assumenda dolor sapiente nihil placeat doloremque magnam facilis facere culpa
-                     officia ab eum non laborum sint fugiat expedita illum soluta? Nobis 
-                     dolore quae aperiam veritatis ipsum ea non quibusdam.
-                </p>
-                <p>repellat assumenda dolor sapiente nihil placeat doloremque magnam facilis facere culpa</p>
+                <h3>A propos de Varren rénovation</h3>
+                <h2>Votre interlocuteur unique pour vos projets de rénovation sur mesure.</h2>
+                <p>Pour la réalisation de vos travaux, nous travaillons sur plan ou en coordination avec les architectes ou décorateurs d'intérieur.</p>
+                <p>Notre entreprise vous propose un accompagnement personnalisé en mettant à votre disposition notre expérience acquise depuis de nombreuses années.</p>
+                <p>Ainsi, vous bénéficierez des services d'une entreprise tous corps d'état, avec une organisation qui simplifiera grandement la gestion de votre chantier, 
+                    notamment lors de gros travaux impliquant l'intervention de nombreux corps de métiers (maçon, menuisier, plombier, électricien, plaquiste, peintre...).
+                    Avec une forte expérience dans le métier, nous mettons notre professionnalisme au service de nos clients, qu'ils aient un projet d'extension, de rénovation, ou d'aménagement.</p>
             </div>
             <div class="right">
                 <div class="icon">
                     <span class="fa fa-h-square"></span>
-                    <h4>Réalisation</h4>
+                    <h4><a href="./realisation.html">Réalisation</a></h4>
                 </div>
                 <div class="icon">
                     <span class="fa fa-h-square"></span>
-                    <h4>Réalisation</h4>
+                    <h4><a href="./extension.html">Extension</a></h4>
                 </div>
                 <div class="icon">
                     <span class="fa fa-h-square"></span>
-                    <h4>Réalisation</h4>
+                    <h4><a href="./contact.html">Contact</a></h4>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="image-slider">
+        <div class="slider-container">
+          <img src="./images/m1.jpg" alt="Image 1">
+          <img src="./images/m2.jpg" alt="Image 2">
+          <img src="./images/m3.jpg" alt="Image 3">
+          <img src="./images/m4.jpg" alt="Image 4">
+          <img src="./images/m5.jpg" alt="Image 5">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+          <img src="./images/m6.jpg" alt="Image 6">
+
+          <!-- Ajoutez d'autres images ici -->
+        </div>
+      </div>
+      <script>
+        var sliderContainer = document.querySelector('.slider-container');
+
+        sliderContainer.addEventListener('animationiteration', function() {
+          this.appendChild(this.firstElementChild); // Déplace la première image à la fin du conteneur
+        });
+      </script>
+
 </header>
 
     <footer>
@@ -70,7 +99,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>coptright &copy;2023 VarennRénovation. designed by <span>beviryon</span></p>
+            <p>coptright &copy;2023 VarennRénovation. designed by <a href="https://portfolio-beviryon.vercel.app/">Beviryon</a></p>
         </div>
     </footer>
 

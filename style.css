@@ -17,6 +17,9 @@ header {
     animation: header 20s infinite;
 }
 @keyframes header{
+    0%{
+        background-image: url(./images/fond4.jpg);
+    }
     25%{
         background-image: url(./images/fond9.jpg);
     }
@@ -99,7 +102,7 @@ span {
 
 .container .container-bloc {
     width: 50%;
-    height: auto;
+    height: 150px;
     border-radius: 25px;
     background-color: rgb(255, 255, 255, 0.50);
     backdrop-filter: blur(2px);
@@ -108,6 +111,8 @@ span {
 .container .container-bloc .text {
     font-size: 4rem;
     color: #000062;
+    position: relative;
+    top: 8px;
 }
 
 .container .container-bloc .contact {
@@ -115,6 +120,8 @@ span {
     color: rgb(237, 118, 0);
     font-weight: 600;
     cursor: pointer;
+    position: relative;
+    top: 10px;
 }
 
 .container .container-bloc .contact:hover {
@@ -287,3 +294,4 @@ footer {
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+

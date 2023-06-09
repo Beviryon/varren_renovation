@@ -69,8 +69,64 @@
                 <div class="pic child">
                     <img src="./images/m3.jpg">
                 </div>
+                <div class="pic child">
+                    <img src="./images/m3.jpg">
+                </div>
+                <div class="pic child">
+                    <img src="./images/m3.jpg">
+                </div>
+                <div class="pic child">
+                    <img src="./images/m3.jpg">
+                </div>
             </div>
+
+            <div class="popup-imag">
+                <span>&times;</span>
+                <img src="./images/img1.jpg">
+            </div> 
+
         </div>
+
+        <script>
+            document.querySelectorAll('.photo-gallery .pic').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-imag').style.display = 'block';
+                    document.querySelector('.popup-imag img').src = image.querySelector('img').src;
+                }
+            });
+        
+            document.querySelector('.popup-imag span').onclick = () => {
+                document.querySelector('.popup-imag').style.display = 'none';
+            }
+        </script>
+
+        <div class="image-slider">
+            <div class="slider-container">
+              <img src="./images/m1.jpg" alt="Image 1">
+              <img src="./images/m2.jpg" alt="Image 2">
+              <img src="./images/m3.jpg" alt="Image 3">
+              <img src="./images/m4.jpg" alt="Image 4">
+              <img src="./images/m5.jpg" alt="Image 5">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+              <img src="./images/m6.jpg" alt="Image 6">
+
+            </div>
+          </div>
+          <script>
+            var sliderContainer = document.querySelector('.slider-container');
+    
+            sliderContainer.addEventListener('animationiteration', function() {
+              this.appendChild(this.firstElementChild); // Déplace la première image à la fin du conteneur
+            });
+          </script>
 
     </header>
 
@@ -88,7 +144,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>coptright &copy;2023 VarennRénovation. designed by <span>beviryon</span></p>
+            <p>coptright &copy;2023 VarennRénovation. designed by <a href="https://portfolio-beviryon.vercel.app/">Beviryon</a></p>
         </div>
     </footer>
 

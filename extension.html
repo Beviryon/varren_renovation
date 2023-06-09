@@ -28,12 +28,66 @@
     </nav>
     <header>
 
+        <div class="container">
+            <div class="image-section">
+                <ul id="image-list">
+                  <li><img src="./images/m1.jpg" alt="Image 1"></li>
+                  <li><img src="./images/m2.jpg" alt="Image 2"></li>
+                  <li><img src="./images/m3.jpg" alt="Image 3"></li>
+                  <!-- Ajoutez d'autres images ici -->
+                </ul>
+              </div>
+
+              <script>
+                function rotateImages() {
+                    var imageList = document.getElementById('image-list');
+                    var images = imageList.getElementsByTagName('li');
+                    var currentImageIndex = 0;
+                  
+                    setInterval(function() {
+                      images[currentImageIndex].style.display = 'none';
+                  
+                      currentImageIndex++;
+                      if (currentImageIndex >= images.length) {
+                        currentImageIndex = 0;
+                      }
+                  
+                      images[currentImageIndex].style.display = 'block';
+                    }, 4000); // Changez la valeur en millisecondes selon la durée souhaitée entre chaque rotation
+                  }
+                  
+                  rotateImages();
+                  
+              </script>
+              
+            <div class="text-section">
+                <h1>Travaux de construction et d'extension en Île-de-France</h1>
+                <p>Vous envisagez l'agrandissement d'une construction existante ? Vous recherchez une entreprise fiable, de qualité et compétente ?
+                    L'entreprise Varren Rénovation réalise tous vos travaux sur plan ou en coordination avec les architectes. Selon vos besoins, 
+                    notre équipe de professionnels, qualifiés, intervient pour les particuliers et les professionnels, et réalise dans le respect du bâtiment existant,
+                     de vos exigences et de votre budget, vos travaux d'extension.</p>
+                <ul>
+                    <li>Extension de bâtiment,</li>
+                    <li>Extension latérale</li>
+                    <li>Extension par surélévation</li>
+                    <li>Aménagement des combles</li>
+                </ul>
+
+                <p>Notre passion et notre savoir-faire nous permettent de vous accompagner pas à pas dans vos futures créations (organisation et suivi de chantier).
+                     Chiffrage précis avec les vrais prix et délais pour votre projet.</p>
+                <p>Le respect des lieux, le choix des matériaux, la tenue des délais et surtout votre satisfaction sont notre priorité.</p>
+
+                <button class="contact-button"> <a href="./contact.html">Contactez-nous !</a></button>
+            </div>
+        </div>
+
+
     </header>
 
     <footer>
         <div class="footer-content">
             <h3>Varenn Rénovation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla est distinctio deserunt quis!</p>
+            <p>Le respect des lieux, le choix des matériaux, la tenue des délais et surtout votre satisfaction sont notre priorité.</p>
             <ul class="socials">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -44,7 +98,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>coptright &copy;2023 VarennRénovation. designed by <span>beviryon</span></p>
+            <p>coptright &copy;2023 VarennRénovation. designed by <a href="https://portfolio-beviryon.vercel.app/">Deslo' Group</a></p>
         </div>
     </footer>
 </body>
