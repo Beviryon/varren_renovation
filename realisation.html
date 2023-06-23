@@ -14,7 +14,7 @@
         <div class="nav-links">
             <ul>
                 <li> <a href="./index.html">Acceuil</a></li>
-                <li> <a href="#">Rénovation</a></li>
+                <li> <a href="./renovation.html">Rénovation</a></li>
                 <li> <a href="./extension.html">Extension</a></li>
                 <li> <a href="./realisation.html">Réalisation</a></li>
                 <li> <a href="./apropos.html">Apropos</a></li>
@@ -35,12 +35,40 @@
             <h1>VARENN REVONATION</h1>
             <div class="top-content">
                 <h3>Nos réalisations</h3>
-                <label for="check1">Tous</label>
-                <label for="check2">Rénovation</label>
-                <label for="check3">Construction</label>
-                <label for="check4">Meubles sur mesure</label>
+                <div id="dropdown-container">
+                    <label for="check1">Tous</label>
+                    <label for="check2">Rénovation</label>
+                    <label for="check3">Construction</label>
+                    <label for="check4">Meubles sur mesure</label>
+                </div>
             </div>
 
+            <script>
+                // Script pour gérer le changement d'options dans la liste déroulante
+                window.addEventListener('DOMContentLoaded', function() {
+                  var dropdown = document.getElementById('dropdown');
+                  var select = document.getElementById('select');
+              
+                  // Fonction pour rediriger vers la page appropriée en fonction de l'option sélectionnée
+                  select.addEventListener('change', function() {
+                    var selectedValue = select.value;
+                    if (selectedValue === 'all') {
+                      // Rediriger vers la page "Tous"
+                      window.location.href = '/tous';
+                    } else if (selectedValue === 'renovation') {
+                      // Rediriger vers la page "Rénovation"
+                      window.location.href = '/renovation';
+                    } else if (selectedValue === 'construction') {
+                      // Rediriger vers la page "Construction"
+                      window.location.href = '/construction';
+                    } else if (selectedValue === 'meubles') {
+                      // Rediriger vers la page "Meubles sur mesure"
+                      window.location.href = '/meubles';
+                    }
+                  });
+                });
+              </script>
+    
             <div class="photo-gallery">
                 <div class="pic place">
                     <img src="./images/img1.jpg">

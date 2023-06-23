@@ -145,6 +145,20 @@ label:hover {
     color: #000;
 }
 
+/* Styles pour l'affichage normal */
+.top-content label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Styles pour l'affichage mobile */
+@media (max-width: 700px) {
+    .top-content label {
+        display: none;
+    }
+}
+
+
 .photo-gallery {
     width: 90%;
     margin: auto;
@@ -191,7 +205,7 @@ label:hover {
     position: absolute;
     width: 100%;
     height: 0;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     bottom: 0;
     left: 0;
     border-radius: 10px;
@@ -207,49 +221,53 @@ label:hover {
     opacity: 1;
 }
 
-#check1:checked ~ .container_img .photo-gallery .pic {
+#check1:checked~.container_img .photo-gallery .pic {
     opacity: 1;
     transform: scale(1);
     position: relative;
     transition: .5s;
 }
 
-#check2:checked ~ .container_img .photo-gallery .family {
+#check2:checked~.container_img .photo-gallery .family {
     transform: scale(0);
     opacity: 1;
     position: absolute;
 }
 
-#check2:checked ~ .container_img .photo-gallery .child
-/* #check2:checked ~ .container_img .photo-gallery .place*/ {
+#check2:checked~.container_img .photo-gallery .child
+
+/* #check2:checked ~ .container_img .photo-gallery .place*/
+    {
     opacity: 0;
     transform: scale(1);
     position: absolute;
     transition: .0s;
 }
 
-#check3:checked ~ .container_img .photo-gallery .child {
+#check3:checked~.container_img .photo-gallery .child {
     transform: scale(0);
     opacity: 1;
     position: absolute;
 }
 
 /*#check3:checked ~ .container_img .photo-gallery .family*/
-#check3:checked ~ .container_img .photo-gallery .place {
+#check3:checked~.container_img .photo-gallery .place {
     opacity: 0;
     transform: scale(1);
     position: absolute;
     transition: .0s;
 }
 
-#check4:checked ~ .container_img .photo-gallery .place {
+#check4:checked~.container_img .photo-gallery .place {
     transform: scale(0);
     opacity: 1;
     position: absolute;
 }
 
-#check4:checked ~ .container_img .photo-gallery .family
-/*#check4:checked ~ .container_img .photo-gallery .child*/ {
+#check4:checked~.container_img .photo-gallery .family
+
+/*#check4:checked ~ .container_img .photo-gallery .child*/
+    {
     opacity: 0;
     transform: scale(1);
     position: absolute;
@@ -260,7 +278,7 @@ label:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,.9);
+    background: rgba(0, 0, 0, .9);
     height: 100%;
     width: 100%;
     z-index: 100;
@@ -385,7 +403,97 @@ label:hover {
         letter-spacing: 4px;
     }
 
+    /*::::::::::::::::::::::::::::::::::*/
+    /*style contenu*/
+    .container_img h1 {
+        font-weight: normal;
+        font-size: 25px;
+        position: relative;
+        margin: 40px 0;
+    }
+
+    header {
+        position: relative;
+        top: 100px;
+    }
+
+    .photo-gallery {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .pic {
+        position: relative;
+        height: 110px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px lightgray;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .pic img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: .5s;
+    }
+
+    .pic::before {
+        content: "VARENN GALERIE";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        width: 100%;
+        margin-top: -100px;
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .2s;
+        z-index: 1;
+    }
+
+    .pic::after {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, .4);
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    .pic:hover::after {
+        height: 100%;
+    }
+
+    .pic:hover::before {
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    .popup-imag span {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 40px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+
 }
+
+
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
@@ -467,28 +575,48 @@ footer {
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 .image-slider {
-    height: 200px; /* Hauteur souhaitée de la section des images */
-    overflow: hidden; /* Cache les images qui dépassent de la hauteur définie */
+    height: 200px;
+    overflow: hidden;
     top: 50px;
     position: relative;
-  }
-  
-  .slider-container {
-    display: flex; /* Affiche les images en ligne */
-    animation: slide 20s infinite; /* Animation de défilement */
-  }
-  
-  .slider-container img {
-    width: 200px; /* Largeur souhaitée des images */
-    height: auto; /* Hauteur automatique pour conserver les proportions */
-    margin-right: 10px; /* Marge entre les images */
-  }
-  
-  @keyframes slide {
+}
+
+.slider-container {
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+.slider-container img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@keyframes slide {
     0% {
-      transform: translateX(0); /* Commence sans décalage */
+        transform: translateX(0);
+        /* Commence sans décalage */
     }
+
     100% {
-      transform: translateX(-100%); /* Défilement complet vers la gauche */
+        transform: translateX(-100%);
+        /* Défilement complet vers la gauche */
     }
-  }
+}
+
+/*Style mobile*/
+@media screen and (max-width: 900px) {
+
+    /*image slider*/
+    .image-slider {
+        height: 200px;
+        top: 40px;
+        position: relative;
+    }
+
+    .slider-container img {
+        width: 120px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
