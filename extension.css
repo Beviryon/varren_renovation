@@ -14,7 +14,6 @@ header {
     height: 100vh;
     width: 100vw;
     background-color: #a3a3a3;
-
 }
 
 .navbar {
@@ -84,10 +83,10 @@ span {
     .navbar .logo {
         display: flex;
         position: absolute;
-        top: 40px;
-        left: 50px;
-        width: 50px;
-        height: 50px;
+        top: 18px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
     }
 
     .navbar .menu-hamburger {
@@ -136,28 +135,42 @@ span {
     /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
     /*style mobile du bloc de texte*/
-    .container .container-bloc {
+
+    .container {
+      flex-direction: column;
+      top: 130px;
+    }
+
+    .container .image-section {
+        flex-basis: 50%;
+        position: relative;
+        margin-right: 50px;
+    }
+
+    .container .text-section{
+        position: relative;
         width: 90%;
+        margin-left: 280px;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    footer {
+        background-color: #111;
         height: auto;
-        border-radius: 25px;
-        background-color: rgb(255, 255, 255, 0.80);
-        backdrop-filter: blur(1px);
+        width: 100vw;
+        padding-top: 40px;
+        color: #fff;
+        position: relative;
+        top: 750px;
     }
 
-    .container .container-bloc .text {
-        font-size: 3rem;
-        color: #000062;
-    }
-
-    .container .container-bloc .contact {
-        font-size: 2rem;
-        color: rgb(237, 118, 0);
-        font-weight: 600;
-    }
-    
-    .container .container-bloc .contact:hover {
-        color: #6c3d00;
-        letter-spacing: 4px;
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
 
 }
@@ -181,15 +194,20 @@ footer {
     text-align: center;
 }
 
+.footer-content .socials li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-content .socials li a {
+    color: red;
+}
+
 .footer-content h3 {
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
-}
-
-.footer-content .socials li a {
-    color: red;
 }
 
 .footer-content p {
@@ -204,7 +222,6 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
-    list-style: none;
 }
 
 .socials li {

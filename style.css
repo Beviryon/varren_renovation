@@ -14,7 +14,7 @@ header {
     width: 100vw;
     background-image: url(./images/fond1.jpg);
     background-size: cover;
-    animation: header 20s infinite;
+    animation: header 25s infinite;
 }
 @keyframes header{
     0%{
@@ -193,22 +193,28 @@ span {
 
     /*style mobile du bloc de texte*/
     .container .container-bloc {
+        position: relative;
         width: 90%;
-        height: auto;
+        height: 2%;
         border-radius: 25px;
         background-color: rgb(255, 255, 255, 0.80);
         backdrop-filter: blur(1px);
+        top: -70px;
     }
 
     .container .container-bloc .text {
         font-size: 3rem;
         color: #000062;
+        position: relative;
+        text-align: center;
+        align-items: center;
     }
 
     .container .container-bloc .contact {
         font-size: 2rem;
         color: rgb(237, 118, 0);
         font-weight: 600;
+        top: 50px;
     }
     
     .container .container-bloc .contact:hover {

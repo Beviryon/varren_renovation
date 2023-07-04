@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="renovation.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rénotion</title>
 </head>
 <body>
@@ -22,6 +23,17 @@
         </div>
         <img src="./images/menu.png" alt="image" class="menu-hamburger">
     </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuHamburger = document.querySelector(".menu-hamburger");
+            const navLinks = document.querySelector(".nav-links");
+    
+            menuHamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-menu');
+            });
+        });
+    </script>
 
     <div class="container">
         <div class="image-block">
@@ -87,7 +99,7 @@
       <footer>
         <div class="footer-content">
             <h3>Varenn Rénovation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla est distinctio deserunt quis!</p>
+            <p>Le respect des lieux, le choix des matériaux, la tenue des délais et surtout votre satisfaction sont notre priorité.</p>
             <ul class="socials">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>

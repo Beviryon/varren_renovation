@@ -76,10 +76,10 @@ span {
     .navbar .logo {
         display: flex;
         position: absolute;
-        top: 20px;
-        left: 70px;
-        width: 60px;
-        height: 60px;
+        top: 18px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
     }
 
     .navbar .menu-hamburger {
@@ -106,6 +106,7 @@ span {
     .navbar a {
         color: rgb(255, 255, 255);
     }
+
 
     /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
@@ -228,6 +229,8 @@ span {
 @media screen  and (max-width: 900px) {
     #about .container {
         flex-direction: column;
+        position: relative;
+        top: 45px;
     }
 
     #about .container .left {
@@ -242,6 +245,14 @@ span {
     #about .container .left {
         text-align: justify;
      }
+
+     #about .container .left h3 {
+        position: relative;
+        font-size: 2em;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 6%;
+    }
 }
 
 
@@ -326,17 +337,17 @@ footer {
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-.image-slider {
+a .image-slider {
     height: 200px; /* Hauteur souhaitée de la section des images */
     overflow: hidden; /* Cache les images qui dépassent de la hauteur définie */
   }
   
-  .slider-container {
+ a .slider-container {
     display: flex; /* Affiche les images en ligne */
     animation: slide 20s infinite; /* Animation de défilement */
   }
   
-  .slider-container img {
+ a .slider-container img {
     width: 200px; /* Largeur souhaitée des images */
     height: auto; /* Hauteur automatique pour conserver les proportions */
     margin-right: 10px; /* Marge entre les images */
